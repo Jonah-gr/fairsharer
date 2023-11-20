@@ -21,7 +21,3 @@ def fair_sharer(values, num_iterations, share=0.1):
         values[index] -= 2 * int(max_value * share)
 
     return values
-
-
-print(fair_sharer([0, 1000, 800, 0], 1)) # --> [100, 800, 900, 0]
-print(fair_sharer([0, 1000, 800, 0], 2)) # --> [100, 890, 720, 90]
